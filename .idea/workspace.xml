@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa6c4a90-b306-4810-b4e3-e2add56dac2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Jared.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getPairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/getPairs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pairs/pairs.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pairs/pairs.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579304224692</updated>
-      <workItem from="1579304227837" duration="24513000" />
+      <workItem from="1579304227837" duration="25593000" />
     </task>
     <servers />
   </component>
@@ -162,22 +160,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579332356405" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1579402760757">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1579403310369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579402760757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1579402760757">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579403310369" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1579403310369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579402760757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1579402760756">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579403310369" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1579403310368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579402760756" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1579402760757">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579403310368" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1579403310369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579402760757" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579403310369" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579342441364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -206,6 +204,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pairsTrading$getData.coverage" NAME="getData Coverage Results" MODIFIED="1579344043568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pairsTrading$trade.coverage" NAME="trade Coverage Results" MODIFIED="1579342513371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pairsTrading$getPairs.coverage" NAME="getPairs Coverage Results" MODIFIED="1579402760742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pairsTrading$getPairs.coverage" NAME="getPairs Coverage Results" MODIFIED="1579403310359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

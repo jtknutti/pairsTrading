@@ -45,8 +45,8 @@ def read_pkl(file):
 
 def get_ratio(pairs):
     for i in range(len(pairs)):
-        stock_a = getData.get_stock_history(i[0])
-        stock_b = getData.get_stock_history(i[1])
+        stock_a = getData.get_stock_history((pairs[i])[0])
+        stock_b = getData.get_stock_history((pairs[i])[1])
         if len(stock_a) > len(stock_b):
             stock_a = stock_a[(len(stock_a) - len(stock_b)):]
         elif len(stock_b) > len(stock_a):
