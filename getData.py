@@ -11,8 +11,9 @@ def get_data(stock):  # pull the year to date data for stock from yfinance and s
     data.to_pickle("data/" + stock + ".pkl")
 
 
-def get_latest_close(stock):  # given a pandas dataframe of a stock's closing price values print the most up to date one
-    print(stock[stock.size - 1])
+def get_latest_close(stock):  # given a pandas dataframe of a stocks closing price values return the most up to date one
+    data = pandas.read_pickle("data/" + stock + ".pkl")
+    return data[data.size - 1]
 
 
 def get_stock_history(stock): # returns the dataframe of the stock's historical closing prices

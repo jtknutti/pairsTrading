@@ -1,5 +1,6 @@
 import getData
 from numpy import corrcoef
+from statistics import stdev
 import pandas
 import warnings
 from statsmodels.tsa.stattools import coint
@@ -52,13 +53,18 @@ def get_ratio(pairs):
         elif len(stock_b) > len(stock_a):
             stock_b = stock_b[(len(stock_b) - len(stock_a)):]
         ratio = 0
+        stdev_set = []
         for j in range(len(stock_a)):
             if stock_a[j] > stock_b[j]:
                 ratio += stock_a[j] / stock_b[j]
+                stdev_set.append(stock_a[j] / stock_b[j])
             else:
                 ratio += stock_b[j] / stock_a[j]
+                stdev_set.append(stock_b[j] / stock_a[j])
         ratio = ratio / len(stock_a)
+        st_dev = stdev(stdev_set, ratio)
         pairs[i].append(ratio)
+        pairs[i].append(st_dev)
 
 
 if __name__ == "__main__":  # analyzes the data from the data folder and pickles the returned list to pairs/pairs.pkl
