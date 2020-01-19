@@ -12,6 +12,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="float.__getitem__" />
+          <option value="int.__getitem__" />
         </list>
       </option>
     </inspection_tool>

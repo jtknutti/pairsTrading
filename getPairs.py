@@ -17,7 +17,7 @@ def check_correlation(stock_a, stock_b):  # given two stocks return a correlatio
         return -1
 
 
-def check_cointegration(stock_a, stock_b):
+def check_cointegration(stock_a, stock_b):  # given two stocks return the cointegration value
     if len(stock_a) > len(stock_b):
         stock_a = stock_a[(len(stock_a) - len(stock_b)):]
     elif len(stock_b) > len(stock_a):
@@ -25,7 +25,7 @@ def check_cointegration(stock_a, stock_b):
     return coint(stock_a, stock_b)[1]
 
 
-def get_pairs():
+def get_pairs():  # given the stock data check the correlation and cointegration. if the values are right, add to a list
     pairs = []
     warnings.filterwarnings("ignore", category=RuntimeWarning)
     stocks = open("stockLists/sp500.txt").readlines()
@@ -43,6 +43,26 @@ def read_pkl(file):
     print(pandas.read_pickle(file))
 
 
-if __name__ == "__main__":
+def get_ratio(pairs):
+    for i in range(len(pairs)):
+        stock_a = getData.get_stock_history(i[0])
+        stock_b = getData.get_stock_history(i[1])
+        if len(stock_a) > len(stock_b):
+            stock_a = stock_a[(len(stock_a) - len(stock_b)):]
+        elif len(stock_b) > len(stock_a):
+            stock_b = stock_b[(len(stock_b) - len(stock_a)):]
+        ratio = 0
+        for j in range(len(stock_a)):
+            if stock_a[j] > stock_b[j]:
+                ratio += stock_a[j] / stock_b[j]
+            else:
+                ratio += stock_b[j] / stock_a[j]
+        ratio = ratio / len(stock_a)
+        pairs[i].append(ratio)
+
+
+if __name__ == "__main__":  # analyzes the data from the data folder and pickles the returned list to pairs/pairs.pkl
     data = pandas.Series(get_pairs())
+    get_ratio(data)
     data.to_pickle("pairs/pairs.pkl")
+    read_pkl("pairs/pairs.pkl")
