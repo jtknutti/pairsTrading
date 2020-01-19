@@ -1,0 +1,3 @@
+1/18 -- added code to pull 1 year's worth of data on all the s and p 500 stocks from yfinance,
+added code to determine if stocks are a good pair for pairs trading
+TODO: store the list of pairs from getPairs, calculate ratio of fair value, implement buying and selling
