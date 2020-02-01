@@ -1,6 +1,7 @@
 import getData
 import pandas
 import alpaca_trade_api as tradeapi
+import os
 
 def check_ratios(pairs):
     for i in range(len(pairs)):

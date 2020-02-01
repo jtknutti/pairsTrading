@@ -1,2 +1,3 @@
 doc/keys
 *.pyc
+*.pkl
