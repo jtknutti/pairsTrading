@@ -70,5 +70,5 @@ def get_ratio(pairs):
 if __name__ == "__main__":  # analyzes the data from the data folder and pickles the returned list to pairs/pairs.pkl
     data = pandas.Series(get_pairs())
     get_ratio(data)
-    data.to_pickle("pairs/pairs.pkl")
+    data.to_pickle("pairs/pairs.pkl")  # File format: [stock1, stock2, averageRatio, stdev]
     read_pkl("pairs/pairs.pkl")
